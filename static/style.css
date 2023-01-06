@@ -1,0 +1,122 @@
+:root{
+    --cor1:#196B3E;
+    --cor2:#7EEEB0;
+    --cor3:#36EB87;
+    --cor4:#396B4F;
+    --cor5:#2AB86A;
+    --nav-gradient: linear-gradient(var(--cor2),var(--cor1));
+    --body-gradient: linear-gradient(var(--cor2),rgb(184, 255, 202));
+}
+@font-face {
+    font-family: roboto-android;
+    src: url(fontes/idroid.otf);
+}
+
+body{
+    margin: 0;
+    background-image: var(--body-gradient);
+}
+/* header styles */
+header{
+    background-image: var(--nav-gradient);
+    text-align: center;
+    display: grid;
+    font-family: fantasy;
+    color: white;
+    height: 180px;
+} 
+
+header > nav{
+    display:flex ;
+    padding: 0;
+    height: 30px;
+}
+
+ header> nav > ul{
+    padding: 0px;
+    display: inline-flex;
+    list-style: none;
+    height: 20px;
+    padding-bottom: 0px;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    /* text-align: center; */
+    height: 22px;
+    width: 100px;
+    border-radius: 4px;
+    vertical-align: middle;
+    
+}
+
+header > nav > ul > li:hover {
+    background-color:var(--cor2);
+    /* background-color: aqua; */
+    transition: 0.5s ease-out;
+}
+/* fim da nav */
+
+main{
+    width: 75%;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: roboto-android;
+    color: var(--cor5);
+}
+
+main > h2{
+    margin: 0px;
+    padding: 10px;   
+    align-items: center;
+}
+
+img{
+    margin: 0 auto;
+}
+
+.video{
+    background-color: #396B4F;
+    padding: 15px;
+
+
+}
+
+section{
+    background-color: #d5ffe8;
+    border-radius: 15px;
+    width: 60%; 
+    margin: 0 auto;
+}
+
+section>h4{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    height: 30px;
+    border-radius: 15px 15px 0px 0px;
+    color: white;
+    vertical-align: middle;
+    padding: 4px;
+    align-items: center;
+}
+
+.list_collection{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
+
+.list_collection > ol{
+    list-style-type: '\01F5F8';
+    /* list-style: none; */
+}
+
+footer{
+    background-color: rgb(118, 231, 207);
+    color: aliceblue;
+}
